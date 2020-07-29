@@ -23,13 +23,20 @@ echo -e "\e[01;34m--------------------------------------\e[00m"
 echo -e "\e[00;38mTesting tool for trace social media stalkers\e[00m"
 echo -e "\e[01;34m______________________________________\e[00m"
 echo " "
-echo -e "STATUS: \e[00;33mBeta 0.4\e[00m "
+echo -e "CODENAME: RED6\e[00;33m\e[00m "
 echo -e "-- \e[00;31m Coded for security testing - The author decline any responsability for 
 any illegal use of this tool\e[00m"
 echo " "
 bar
 echo -e "\e[01;34mcoded by Cignoraptor\e[00m --- contact for advanced versions or suggestions > \e[00;34mcignoraptor@tutanota.com\e[00m"
 echo " "
+
+echo -e "\e[00;33mChecking for resources: \e[00m"
+command -v apache2 >/dev/null 2>&1 || { echo "apache2 it's not installed.  Aborting." >&2; exit 1; }
+:
+command -v shred >/dev/null 2>&1 || { echo "shred it's not installed.  Aborting." >&2; exit 1; }
+:
+sleep 0.5
 
         echo -e "\e[00;33mStarting..."
         sleep 1
